@@ -33,4 +33,21 @@ I included all Jupyter notebooks in the notebooks folder in the repository, whic
 I will list the various DH tools used, or what other tools were used, for each data type within the project from top to bottom:
 
 Animal Struck Count:
-This was fairly simple data to show. Since it was more a list of data points that were given to me via a python script it was easiest to show as a table.
+This was fairly simple data to show. Since it was more a list of data points that were given to me via a python script it was easiest to show as a table. I used some of the bootstrap functionality to create collapsable tables so that the large tables would not constantly be showing on the page. Other than that it was simply data imported from my Python analysis.
+
+Who Fought Back:
+Again, this was data analyzed, which in turn just gave some numbers to put in a table. I used an image for the background (I really could have used a better image, but it was a fun picture I found. Fully knowing it was pretty bad). The data was just imported from the Python analysis.
+
+Scene of the Battle:
+The map was imported from the ArcGIS webportal. I created the map of Pennsylvania and imported the airport data from the FAA on airport locations in the entire country, then just limited it to the state. I then exported this as a embeddable applet.
+Below the table I listed out all of the airports by number. I had hoped to put these numbers in the tooltips for the airports, but could not figure out how to do so. I hope to learn this for the second draft.
+
+Timing:
+These were agian multiple images. I took some stock images for the times of day and months, which I then spit up using GIMP. I then put all of this information in a table to display. I got the original information from my Python scripts.
+For the flight image, I found an image online that was originally used for other flight information, but used GIMP again to edit it to display the data as I had analyzed it. There were two data points I could not include in the image, so I put them in a table below.
+
+Pilots Remarks:
+I took all of the remarks from the remarks field and input them into the Voyant Tools page. It automatically analyzed the data I input, and it allowed me to create a few different displays. I chose to show the world cloud because the other information was not as interesting and did not show me anything interesting. It ended up just showing me some abbreviations, but nothing too exciting. I chose to dowload the word cloud as an image and imput that image into the website.
+
+Documentation:
+I put all of the links and other information on the tools here. This field really just gives tangeable ability to see what I used and how I got what I did. It also includes links to the two Jupyter notebooks I used to analyze my data. There is also a link to the repository at the bottom.
