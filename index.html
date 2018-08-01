@@ -78,11 +78,18 @@
         <div class="row">
           <div class="col-lg-10 mx-auto">
             <h2>Planes aren't the only thing in the sky.... or apparently on the ground.</h2>
+            <br />
             <p class="lead mb-5">This is a Digiatl Humanities project. It is created using open data published by the FAA.
               This data can be accessed <a href="https://wildlife.faa.gov/database.aspx">here</a>.
+              The data is collected from a form that is filled out at the end of a flight if an incedent has occured.
+              It isn't clear if the data is collected for flights at their final destination even if the strike happens in another location, such as mid flight in another state but land in Pennsylvania. 
+              <br />
+              <br />
               The website was created to showcase my abilty to analyze a dataset, my grasp of digital humanities tools, and my web development skill.
-              I used an open bootstrap layout for the base of the website, Jupyter notebooks for teh data analysis using Python.
-              My jupyter notebooks and the website are all hosted on Github, there are links to the repository and the notebooks at the end of the project, the button below takes you there as well.</p>
+              I used an open bootstrap layout for the base of the website, Jupyter notebooks for the data analysis using Python.
+              My jupyter notebooks and the website are all hosted on Github, 
+              with links to the repository and the notebooks at the end of the project. 
+              Both the button below and the navigation menu on the right will take you there.</p>
             <a class="btn btn-dark btn-xl js-scroll-trigger" href="#documentation">Supporting Documentation</a>
           </div>
         </div>
@@ -96,7 +103,20 @@
           <h3 class="text-secondary mb-0">Animals Struck</h3>
           <h2 class="mb-5">Who Thinks They Can Beat a Plane?</h2>
         </div>
+        <br />
+        <p>
+          While not every animal that is struck by a plan can be identified, there is an attempt to learn what speciese is killed as many times as possible.
+          This is done in a variety of ways, some of which can be identified by sight, while others are sent off to the Smithsonian for identification.
+          I was shocked to learn that no matter where in the United States a bird is struck its remains are always sent all the way to the Smithsonian.
+          I did not learn why this is the case, as the dataset did not indicate a reason, merely that it was done, but I would be curious to learn when and why this practice started.
+        </p>
+        <br />
         <h4>Top 10 Named Contenders</h4>
+        <br />
+        <p>These are the top 10 idenfied animals, all are birds. 
+          The top two data points are actually unidentified small and medium, but I felt showing the top 10 named species would be more significant. 
+          To see the full list of both birds and mammals, click on the images below the visualization to see a table showing every species listed in order.
+          </p>
         <br />
         <div class='tableauPlaceholder' id='viz1533062956262' style='position: relative'>
           <noscript>
@@ -131,7 +151,7 @@
         <br />
         <br />
         <br />
-        <h4>Here are the total tables of all named and unnamed animals struck</h4>
+        <h4>Here are the complete tables of all animals struck.</h4>
         <br />
         <div class="row">
           <div class="col-md-6 mb-5 mb-lg-0">
@@ -913,6 +933,13 @@
           <h2 class="mb-5">When the Animals Fought Back</h2>
           <h4>Damage to Aircraft</h4>
         </div>
+       <br />
+       <p>I was happy to see that the majority of birds did not do any damage to aircraft when struck.
+         While I do feel bad, as often the bird is killed, but it does not indicate that many aircraft are harmed.
+         Even when the aricraft are, it isn't major. Below shows the occurances of damage.
+         The bubbles are interactive and will show exact numbers if you hover over them, and those without labels will show their label in the tooltip as well.
+       </p>
+        <br />
         <div class='tableauPlaceholder' id='viz1533067103298' style='position: relative'>
           <noscript>
             <a href='#'>
@@ -953,7 +980,9 @@
           <h3 class="text-secondary mb-0">Where do they Happen?</h3>
           <h2 class="mb-5">The Scene of the Battle.</h2>
         </div>
-        <p>Below is a map that shows the locaiton of each airport in the state of Pennsylvania. This shows the airport name and identifier.</p>
+        <p>Below is a map that shows the locaiton of each airport in the state of Pennsylvania. This shows the airport name and identifier.
+          I could not input the strike data into the tooltip, so that information is listed below the map in a table.
+        </p>
         <style>
           .embed-container {position: relative; padding-bottom: 80%; height: 0; max-width: 100%;} 
           .embed-container iframe, 
@@ -967,7 +996,7 @@
         <br />
         <br />
         <h3>Battleground</h3>
-        <p>Here is a list of all the airports organized by strike count. I sadly could not currently put this in the map above, so I had to show them seperately.</p>
+        <p>Here is a list of all the airports organized by strike count.</p>
         <br />
         <table class="tg">
           <tr>
@@ -1032,8 +1061,14 @@
         <h2 class="mb-5">When do these strikes happen?</h2>
       </div>
       <div class="container text-center">
-        <div class="content-section-heading">
           <h3 class="mb-4">What Month?</h3>
+          <p>Below is a graph displaying the count per month.
+            I assumed, but wanted to confirm that during migratory periods strikes would increase.
+            My suspicion was confirmed, it seems the peak here is August. Which while a bit early, it still during a migration period.
+            The bar chart below shows this change. The sizes of the bars are not perfectly indicative, as they get both wider and taller as they increased.
+            If you hover over each bar it will display the exact number if you are interested in seeing just how many in each month.
+          </p>
+          <br />
           <div class='tableauPlaceholder' id='viz1533062885333' style='position: relative'>
             <noscript>
               <a href='#'>
@@ -1066,31 +1101,36 @@
         <br />
         <br />
         <h3 class="mb-4">What Time of Day?</h3>
+        <p>Similar to the month, I was interested to see if time of day effected strikes.
+            To my surprise, I found daytime to be the most common.
+            I had guessed that it would have been dawn or dusk, since visibility would be lower for both planes and animals, but I guess more are not as active during these times.
+            I also figured that the window of time that is considered dawn or dusk may be indicative of why the numebrs were lower.
+        </p>
         <br />
         <svg width="848" height="848" xmlns="http://www.w3.org/2000/svg">
           <g transform="translate(424, 424)">
             <g display="none">
               <path d="M1.835826839219246e-14,-299.8132752230962A299.8132752230962,299.8132752230962,0,1,1,-1.835826839219246e-14,299.8132752230962A299.8132752230962,299.8132752230962,0,1,1,1.835826839219246e-14,-299.8132752230962Z" style="stroke: rgb(255, 255, 255); fill: rgb(250, 105, 0); fill-rule: evenodd;"></path>
-              <text transform="translate(9.17913419609623e-15,149.9066376115481)rotate(90)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 15px; font-family: Arial, Helvetica;"></text>
+              <text transform="translate(9.17913419609623e-15,149.9066376115481)rotate(90)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;"></text>
               <title>undefined: none</title>
             </g>
             <g>
               <path d="M2.596251214192389e-14,-424A424,424,0,0,1,72.7486205673459,-417.71238694291594L51.44104292513743,-295.36726139295496A299.8132752230962,299.8132752230962,0,0,0,1.835826839219246e-14,-299.8132752230962Z" style="stroke: rgb(255, 255, 255); fill: rgb(250, 105, 0); fill-rule: evenodd;"></path>
-              <text transform="translate(31.16316261282139,-360.56243792617005)rotate(-85.06024096385543)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">Dawn, 123</text>
+              <text transform="translate(31.16316261282139,-360.56243792617005)rotate(-85.06024096385543)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 15px; font-family: Arial, Helvetica;">Dawn, 123</text>
               <title>Dawn: 123</title>
             </g>
             <g>
               <path d="M72.7486205673459,-417.71238694291594A424,424,0,1,1,-361.7289022955653,221.19719990100546L-255.78095976436035,156.4100400294773A299.8132752230962,299.8132752230962,0,1,0,51.44104292513743,-295.36726139295496Z" style="stroke: rgb(255, 255, 255); fill: rgb(249, 255, 56); fill-rule: evenodd;"></path>
-              <text transform="translate(299.2660507966492,203.50981594968272)rotate(34.21686746987952)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">Day, 2847</text>
+              <text transform="translate(299.2660507966492,203.50981594968272)rotate(34.21686746987952)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 15px; font-family: Arial, Helvetica;">Day, 2847</text>
               <title>Day: 2,847</title>
             </g>
             <g><path d="M-361.7289022955653,221.19719990100546A424,424,0,0,1,-409.12644717352384,111.31734017290316L-289.2960851591585,78.71324609990951A299.8132752230962,299.8132752230962,0,0,0,-255.78095976436035,156.4100400294773Z" style="stroke: rgb(255, 255, 255); fill: rgb(152, 0, 168); fill-rule: evenodd;"></path>
-              <text transform="translate(-332.3085038418058,143.34389635319988)rotate(336.6666666666667)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">Dusk, 202</text>
+              <text transform="translate(-332.3085038418058,143.34389635319988)rotate(336.6666666666667)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 15px; font-family: Arial, Helvetica;">Dusk, 202</text>
               <title>Dusk: 202</title>
             </g>
             <g>
               <path d="M-409.12644717352384,111.31734017290316A424,424,0,0,1,-7.788753642577166e-14,-424L-5.5074805176577374e-14,-299.8132752230962A299.8132752230962,299.8132752230962,0,0,0,-289.2960851591585,78.71324609990951Z" style="stroke: rgb(255, 255, 255); fill: rgb(103, 103, 103); fill-rule: evenodd;"></path>
-              <text transform="translate(-287.5439789040704,-219.7609486312614)rotate(397.3895582329318)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 11px; font-family: Arial, Helvetica;">Night, 1310</text>
+              <text transform="translate(-287.5439789040704,-219.7609486312614)rotate(397.3895582329318)" text-anchor="middle" dx="6" dy=".35em" style="font-size: 15px; font-family: Arial, Helvetica;">Night, 1310</text>
               <title>Night: 1,310</title>
             </g>
           </g>
@@ -1120,7 +1160,22 @@
             <td class="tg-031e">1</td>
           </tr>
         </table>
-        </div>
+        <br />
+        <h4>Stages of a Flight:</h4>
+        <br />
+        <p>
+          While some may know what each stage means, not everyone is. So I included here some basic definitions in case someone needed to know.<br />
+          <br />
+          <strong>Taxi:</strong> The aircraft is moving on the ground prior to takeoff and after landing. <br />
+          <strong>Takeoff:</strong> From the application of takeoff power, through rotation and to an altitude of 35 feet above runway elevation.  <br />
+          <strong>Departure:</strong> From the end of the Takeoff subphase to the first prescribed power reduction, or until reaching 1,000 feet above runway elevation. <br />
+          <strong>Climb:</strong> Any time the aircraft has a positive rate of climb for an extended period of time.<br />
+          <strong>Cruise:</strong> The time period following the initial climb during which the aircraft is in level flight.<br />
+          <strong>Descent:</strong> Any time before the approach during which the aircraft has a negative rate of climb for an extended period of time. <br />
+          <strong>Landing Roll:</strong> Any major rotation during the Descent subphase of the flight.<br />
+          <strong>Approach:</strong> The time from 1,000 feet above runway elevation, to the beginning of the runway's landing flare. <br />
+          <strong>Landing:</strong> From the beginning of the landing flare until aircraft exits the landing runway, comes to a stop on the runway, or when power is applied for takeoff in the case of a touch-and-go landing.  
+        </p>
         </div>
     </section>
 
@@ -1162,8 +1217,9 @@
         <p>
         Data can be found at <a href="https://wildlife.faa.gov/database.aspx">FAA Data</a><br />
         Jupyter Notbooks can be accessed by downloading and using <a href="https://www.anaconda.com/download/#linux>">Anaconda</a><br />
-        My notebooks are <a href="https://github.com/AlexSanford13/Planes_vs_Animals/blob/master/jupyter/Data_Analysis.ipynb">here (pure Python)</a> and <a href="https://github.com/AlexSanford13/Planes_vs_Animals/blob/master/jupyter/Pandas_Data_Analysis.ipynb">here (including Pandas)</a><br />
-        Graphs and other visualizations were created using <a href="https://public.tableau.com/en-us/s/">Tableau Public</a><br />
+        My notebooks are found here: <a href="https://github.com/AlexSanford13/Planes_vs_Animals/blob/master/jupyter/Data_Analysis.ipynb">Pure Python</a> and <a href="https://github.com/AlexSanford13/Planes_vs_Animals/blob/master/jupyter/Pandas_Data_Analysis.ipynb">Python and PANDAS Analysis</a><br />
+        Bar Chart, Box Visualization, and Bubble Visualizations created using <a href="https://public.tableau.com/en-us/s/">Tableau Public</a><br />
+        Circular Time of Day Graph was created using <a href="https://rawgraphs.io/">RAW Graphs</a><br />
         Map was imported through <a href="https://www.arcgis.com/home/signin.html">ArcGIS Online</a><br />
         Word Cloud was created using <a href="http://voyant-tools.org/">Voyant Tools</a><br />
         Images were edited using <a href="https://www.gimp.org/">GIMP</a>
